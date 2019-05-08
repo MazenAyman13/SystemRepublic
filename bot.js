@@ -28,7 +28,7 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const sql = require("sqlite");
 const dateFormat = require('dateformat');
 const pretty = require('pretty-ms')
-const prefix = `<@519053223269498883> `;
+const prefix = `# `;
 var table = require('table').table
 var ti={}
 ,spee={}
@@ -36,7 +36,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = [`${client.guilds.size} Server`,'@Zee5#2700 help','Type @Zee5#2700 help',`${client.users.size} Members`,'@Zee5#2700 invite','By: Hosam | BaronTube'];
+    var setGame = [`#help`];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -60,17 +60,9 @@ client.on('ready', function(){
 });
 client.on("message", message=>{
     if(message.content.startsWith(prefix+'help')) {
-        message.author.send(`
-╭━━━━╮╱╱╱╭╮╱╱╱╱╭━━╮╱╱╱╭╮
-┃╭╮╭╮┃╱╱╱┃┃╱╱╱╱┃╭╮┃╱╱╭╯╰╮
-╰╯┃┃┣┫╭┳━┫╰━┳━━┫╰╯╰┳━┻╮╭╯
-╱╱┃┃┃┃┃┃╭┫╭╮┃╭╮┃╭━╮┃╭╮┃┃
-╱╱┃┃┃╰╯┃┃┃╰╯┃╰╯┃╰━╯┃╰╯┃╰╮
-╱╱╰╯╰━━┻╯╰━━┻━━┻━━━┻━━┻━╯
-**
-TurboBot. a multi purpose bot developed by ! Baro𝐍#5969.
-To see all the bot commands check our website | لرؤية جميع اوامر البوت الرجاء التوجه الى موقعنا:
- https://stoic-lovelace-e66071.netlify.com/ **
+
+
+
 .`)
 message.author.send(`
 **Public commands | الأوامر العامة**
