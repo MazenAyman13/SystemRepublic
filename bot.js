@@ -357,10 +357,10 @@ client.on("message", message=>{
     .setThumbnail(client.user.avatarURL)
     .setAuthor(client.user.tag, client.user.avatarURL)
     .setFooter(message.author.tag, message.author.avatarURL)
-    .setTitle("**TurboBot Information:**")
+    .setTitle("**System Republic Information:**")
     .setDescription("- **Bot Name** :`" + `${client.user.tag}` + "`\n" +  "- **Bot ID** :`" + `${client.user.id}` + "`\n" + 
     "- **Bot Prefix** :`" + `${prefix}` + "`\n" + "- **Ping** :`" + `${ping}` + "`\n" + "- **Uptime** :`" + `${days} days, ${hours} hrs, ${minutes} , ${seconds} sec` + "`\n" + 
-    "- **Creator** :`" + `! Baro𝐍#5969` + "`\n" + "\n" + "```md\n[Servers](Information)```" + "\n" + "- **Guilds** :`" + `${client.guilds.size}` + "`\n" + 
+    "- **Creator** :`" + `Mazen` + "`\n" + "\n" + "```md\n[Servers](Information)```" + "\n" + "- **Guilds** :`" + `${client.guilds.size}` + "`\n" + 
     "- **Members** :`" + `${client.users.size}` + "`\n" + "- **Channels** :`" + `${client.channels.size}` + "`\n" + 
     "\n" + "```tex\n$ Developer Information```" + "\n" + "- **NodeJs** :`" + `${process.version}` + "`\n" + "- **DiscordJs** :`" + `${Discord.version}` + "`\n" + 
     "- **Arch** :`" + `${process.arch}` + "`\n" + "- **Platform** :`" + `${process.platform}` + "`\n" + "\n" + "```cs\n# Host Information```" + "\n" + 
@@ -800,8 +800,8 @@ client.on('message', message => {
                 if(message.content === prefix + "invite") {
                     
                     let embed = new Discord.RichEmbed ()
-                    embed.setTitle("**:arrow_right: Invite Turbo Bot!**")
-                    .setURL("https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591");
+                    embed.setTitle("**اضغط لإضافة البوت إلى سيرفرك**")
+                    .setURL("https://discordapp.com/api/oauth2/authorize?client_id=559021754484523030&permissions=8&scope=bot");
                    message.channel.sendEmbed(embed);
                   }
 });
@@ -840,7 +840,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : Baron")
+     .setFooter("By : Mazen")
 
 
 message.channel.send(embed);
